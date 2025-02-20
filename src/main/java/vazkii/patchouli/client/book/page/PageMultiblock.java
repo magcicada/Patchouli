@@ -245,8 +245,7 @@ public class PageMultiblock extends PageWithText {
 			state = state.getBlock().getExtendedState(state, mb, pos);
 			blockrendererdispatcher.getBlockModelRenderer().renderModel(mb, ibakedmodel, state, pos, worldRendererIn, false);
 
-		} catch (Exception e) {
-			throw new RuntimeException(e);
+		} catch (Exception ignored) {
 		}
 	}
 	
